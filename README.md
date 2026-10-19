@@ -41,8 +41,7 @@ No installation or additional dependencies are required.
 
 ## Live Demo
 
-[Play the Premier League Quiz](https://michaelatano.github.io/quiz-app/)
-
+[Play the Premier League Quiz](https://michaelatano.github.io/Quiz-app/)
 ## Author
 
 Michael Atano
