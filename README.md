@@ -2,6 +2,10 @@
 
 A browser-based multiple-choice quiz testing knowledge of Premier League football. Built as a personal project to practise JavaScript, DOM manipulation and interactive web development.
 
+## Screenshot
+
+![Premier League Quiz App](quiz-screenshot.png)
+
 ## Features
 
 - 10 Premier League football questions
