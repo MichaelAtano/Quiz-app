@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #10251b, #1b4332);
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 560px;
+    padding: 30px;
+
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #176b3a;
+    font-size: 32px;
+}
+
+.question-number {
+    margin-bottom: 12px;
+    color: #176b3a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.question {
+    margin-bottom: 22px;
+    color: #222;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.answers {
+    display: grid;
+    gap: 12px;
+}
+
+.answers button {
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 16px;
+
+    border: 2px solid #dce4df;
+    border-radius: 9px;
+
+    background-color: #f8faf9;
+    color: #222;
+
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.answers button:hover:not(:disabled) {
+    border-color: #23864b;
+    background-color: #eaf6ee;
+}
+
+.answers button:focus-visible,
+.next-button:focus-visible,
+.restart-button:focus-visible {
+    outline: 3px solid #f0b429;
+    outline-offset: 3px;
+}
+
+.answers button:disabled {
+    cursor: default;
+}
+
+.next-button,
+.restart-button {
+    margin-top: 22px;
+    padding: 13px 24px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: #176b3a;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.next-button:hover,
+.restart-button:hover {
+    background-color: #10542c;
+}
+
+@media (max-width: 480px) {
+    .quiz-container {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .question {
+        font-size: 19px;
+    }
+}
